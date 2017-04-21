@@ -7,4 +7,7 @@
 KMP算法是对BF算法进行改进的一种算法，但是如果直接去看KMP算法的话会很难理解（至少我看了几遍没看懂:smile:），我尝试着从BF算法优化过程去理解KMP算法，就会轻松很多。让我们一起开始吧。
 
 * 先看看BF算法的匹配过程，目标串S["**BBC ABCDAB ABCAABCDABDE**"],模式串T["**ABCDABD**"]
-![](/img/BF.png)
+
+![][bf]
+[bf]:https://github.com/kylin1011lu/StringMatchKMP/blob/master/StringMatch/img/BF.png
+

@@ -1,5 +1,7 @@
 #include "stdafx.h"
 
+#pragma region ÊµÏÖ´úÂë
+
 int StringMatchBF(char*strSrc, char*strDest, int pos)
 {
 	if (strSrc == NULL || strDest == NULL)
@@ -401,6 +403,9 @@ void makeNext(const char P[], int next[], int size)
 	}
 	printf("\n");
 }
+
+
+#pragma endregion
 
 int _tmain(int argc, _TCHAR* argv[])
 {

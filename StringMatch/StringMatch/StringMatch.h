@@ -90,7 +90,7 @@ int index_bf_2(char *s, char *t, int *n, int size, int index);
 */
 void next_3(char pattern[], int next[], int n);
 
-#pragma region 其他人博客分享
+#pragma region 网上分享1
 //浅谈字符串匹配算法—BF算法及KMP算法
 //参考：http://blog.csdn.net/jiajiayouba/article/details/9178789
 /*
@@ -110,8 +110,17 @@ int index_kmp(char *s, char *t, int*next, int index);
 
 #pragma endregion
 
-//char p[] =     "AACDAADABCD";
+
+#pragma region 网上分享2
+//【经典算法】——KMP，深入讲解next数组的求解
+//参考：http://www.cnblogs.com/c-cloud/p/3224788.html
+
 void makeNext(const char P[], int next[], int size);
+
+#pragma endregion
+
+
+
 #endif
 
 

@@ -74,7 +74,43 @@ void next_1(char pattern[], int next[], int n)
 	}
 }
 ```
+* 利用该next数组对BF算法进行第1次优化
+```cpp
+int index_bf_1(char *s, char *t, int* n, int size)
+{
+	int i = 0;
+	int j = 0;
+	next_1(t, n, size);
 
+	while (s[i] != '\0')
+	{
+		while (*(t + j) != '\0' && *(s + i + j) != '\0')
+		{
+			if (*(t + j) != *(s + i + j))
+				break;
+			j++;
+		}
+		if (*(t + j) == '\0')
+		{
+			return i;
+		}
+		
+		if (n[j] == -1)
+		{
+			i++;
+		}
+		else
+		{
+			i += n[j];
+		}
+
+		//i++;
+		j = 0;
+	}
+	return -1;
+}
+```
+_在一次匹配失败的时候，可以通过next数组对目标串跳过一些比较_
 
 --------------------------------
 [bf]:/StringMatch/img/BF.png "BF算法图示"

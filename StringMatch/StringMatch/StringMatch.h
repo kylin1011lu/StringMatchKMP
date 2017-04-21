@@ -114,7 +114,7 @@ int index_kmp(char *s, char *t, int*next, int index);
 #pragma region 网上分享2
 //【经典算法】——KMP，深入讲解next数组的求解
 //参考：http://www.cnblogs.com/c-cloud/p/3224788.html
-
+//kylin:该next算法next数组保存的值提前存了一位
 void makeNext(const char P[], int next[], int size);
 
 #pragma endregion

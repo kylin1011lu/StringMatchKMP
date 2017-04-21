@@ -438,3 +438,24 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 
+//		ÔÊÐí½á¹û
+//		index_bf result : 37
+//		A  A  C  D  A  A  D  A  B  C  D
+//		- 1 - 1  1  1  1  1  1  1  1  1  1
+//		index_bf_1 result : 37
+//		A  A  C  D  A  A  D  A  B  C  D
+//		0  0  1  0  0  1  2  0  1  0  0
+//		index_bf_2 result : 37
+//		A  A  C  D  A  A  D  A  B  C  D
+//		0  0  1  0  0  1  2  0  1  0  0
+//		index_kmp result : 37
+//		A  A  C  D  A  A  D  A  B  C  D
+//		0  0  1  0  0  1  2  0  1  0  0
+//		A  A  C  D  A  A  D  A  B  C  D
+//		0  0  1  0  0  1  2  0  1  0  0
+//		A  A  C  D  A  A  D  A  B  C  D
+//		0  0  1  0  0  1  2  0  1  0  0
+//		A  A  C  D  A  A  D  A  B  C  D
+//		0  1  0  0  1  2  0  1  0  0  0
+
+

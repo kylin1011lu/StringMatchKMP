@@ -1,4 +1,5 @@
 # My configurations:
 /StringMatch/Debug
+*.opensdf
 /StringMatch/StringMatch/Debug
 /StringMatch/ipch

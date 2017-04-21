@@ -438,7 +438,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 
-//		允许结果
+//		结果显示：
 //		index_bf result : 37
 //		A  A  C  D  A  A  D  A  B  C  D
 //		- 1 - 1  1  1  1  1  1  1  1  1  1

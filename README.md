@@ -8,6 +8,14 @@ KMP算法是对BF算法进行改进的一种算法，但是如果直接去看KMP
 
 * 先看看BF算法的匹配过程，目标串S["**BBC ABCDAB ABCAABCDABDE**"],模式串T["**ABCDABD**"]
 
+
 ![][bf]
-[bf]:https://github.com/kylin1011lu/StringMatchKMP/blob/master/StringMatch/img/BF.png
+
+
+
+
+
+
+--------------------------------
+[bf]:/StringMatch/img/BF.png "BF算法图示"
 

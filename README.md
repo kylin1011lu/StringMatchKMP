@@ -110,8 +110,14 @@ int index_bf_1(char *s, char *t, int* n, int size)
 	return -1;
 }
 ```
-_在一次匹配失败的时候，可以通过next数组对目标串跳过一些比较_
+_在一次匹配失败的时候，可以通过next数组对目标串跳过一些比较,下图_
+
+![][bf1]
+
+### BF算法第二次优化
+
 
 --------------------------------
 [bf]:/StringMatch/img/BF.png "BF算法图示"
+[bf1]:/StringMatch/img/BF_1.png "BF算法图示"
 

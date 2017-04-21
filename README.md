@@ -11,10 +11,38 @@ KMP算法是对BF算法进行改进的一种算法，但是如果直接去看KMP
 
 ![][bf]
 
+[BF算法代码实现](#算法实现)
+    
 
 
 
-
+算法实现
+----------
+* BF算法代码
+```cpp
+int index_bf(char *s, char *t)
+{
+	int i = 0;
+	int j = 0;
+	while (s[i] != '\0')
+	{
+		while (*(t + j) != '\0' && *(s + i + j) != '\0')
+		{
+			if (*(t + j) != *(s + i + j))
+				break;
+			j++;
+		}
+		if (*(t + j) == '\0')
+		{
+			return i;
+		}
+		i++;
+		j = 0;
+	}
+	return -1;
+}
+```
+----------
 
 --------------------------------
 [bf]:/StringMatch/img/BF.png "BF算法图示"

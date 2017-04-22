@@ -208,6 +208,52 @@ _利用该算法可以直接从最初BF算法第5次匹配直接跳到第10次�
 
 ![][bf2]
 
+* 通过加入了这个next数组后，我们匹配过程中对目标串S比较的位置一直是递增的，没有进行回溯，现在的BF算法就可以称为KMP算法啦。KMP算是对BF算法的改进，KMP算法有怎么改进呢？基本上对KMP算法改进，也就是对next函数进行优化。
+
+### next函数的优化
+
+对next数组优化，我们需要充分理解next数组每个下标j对应值的含义，下面我们利用next数组的值来进行优化。
+
+```cpp
+void next_3(char pattern[], int next[], int n)
+{
+	int i = 0; //首字符
+	int j = 1; //匹配失败的位置
+
+	next[0] = 0;
+	next[1] = 0;
+
+	j = 2;
+	for (; j < n; j++)
+	{
+		int num = 0;
+		i = next[j - 1];
+		for (int k = 1+next[j-1]; k < j; k++)
+		{
+			if (pattern[i] == pattern[k])
+			{
+				i++;
+				num++;
+			}
+			else
+			{
+				num = 0;
+				i = 0;
+
+				if (pattern[i] == pattern[k])
+				{
+					i++;
+					num++;
+				}
+			}
+		}
+
+		next[j] = num;
+		//i = 0;
+	}
+}
+```
+
 
 --------------------------------
 [bf]:/StringMatch/img/BF.png "BF算法图示"
